@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .no-box {
+      width: 300px;
+      height: 200px;
+      border: solid 4px red;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      border: solid 4px red;
+      box-sizing: border-box;
+    }
+
+    .div-1 {
+      padding: 50px;
+    }
+
+    .div-2 {
+      padding: 10px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  BOX SIZING: INHERIT;
+  <div class="no-box div-1">
+    1
+  </div>
+  <br>
+  <div class="no-box div-2">
+    2
+  </div>
+  <br>
+  <br>
+  <br>
+  BOX SIZING: BORDER-BOX;
+  <div class="box div-1">
+    1
+  </div>
+  <br>
+  <div class="box div-2">
+    2
+  </div>
+</body>
+</html>

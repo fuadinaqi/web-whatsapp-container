@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    :root {
+      --primary: rgb(236, 236, 236);
+      --secondary: antiquewhite;
+      --shaded: rgb(141, 141, 141);
+      --shaded-secondary: rgb(201, 201, 201);
+      --input: #f0f2f5;
+    }
+
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type="text"] {
+      background-color: var(--input);
+      outline: none;
+      border: none;
+      box-shadow: 0px 0px 1px 0px;
+      height: 35px;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: var(--shaded);
+    }
+
+    .icon-button {
+      width: 24px;
+      height: 24px;
+      background-color: var(--shaded);
+    }
+
+    .title {
+      width: 120px;
+      height: 20px;
+      background-color: var(--shaded);
+    }
+
+    .description {
+      width: 150px;
+      height: 17px;
+      background-color: var(--shaded);
+    }
+
+    .container {
+      max-height: 100vh;
+      display: flex;
+      background-color: var(--primary);
+    }
+
+    .container > .sidebar {
+      flex: 1.5;
+      border-right: solid 1px;
+    }
+
+    .container > .sidebar > .sidebar--header {
+      height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+    }
+
+    .container > .sidebar > .sidebar--header > .s--header--buttons {
+      display: flex;
+      gap: 8px;
+    }
+    
+    .container > .sidebar > .sidebar--search-bar {
+      padding: 10px 16px;
+    }
+
+    .container > .sidebar > .sidebar--content {
+      height: 720px;
+      overflow-y: auto;
+      padding: 10px 16px;
+    }
+
+    .container > .sidebar > .sidebar--content > .s--content--item {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      border-bottom: solid 1px;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+    .container > .sidebar > .sidebar--content > .s--content--item:hover {
+      background-color: var(--shaded-secondary);
+    }
+
+    .container > .sidebar > .sidebar--content > .s--content--item > .s--c--item--content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-left: 1rem;
+    }
+
+    .container > .main {
+      flex: 3;
+    }
+
+    .container > .main > .main--header {
+      height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+    }
+
+    .container > .main > .main--header > .m--header--pp {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    .container > .main > .main--header > .m--header-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .container > .main > .main--content {
+      height: 730px;
+      background-color: var(--secondary);
+    }
+
+    .container > .main > .main--footer {
+      height: 59px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      column-gap: 10px;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Whatsapp Container</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- SECTION 1 -->
+
+    <div class="sidebar">
+      <!-- SIDEBAR HEADER -->
+      <div class="sidebar--header">
+        <div class="avatar"></div>
+        <div class="s--header--buttons">
+          <div class="icon-button"></div>
+          <div class="icon-button"></div>
+          <div class="icon-button"></div>
+        </div>
+      </div>
+      <!-- SIDEBAR SEARCH BAR -->
+      <div class="sidebar--search-bar">
+        <input type="text" class="search-input">
+      </div>
+      <!-- SIDEBAR CONTENT -->
+      <div class="sidebar--content">
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="s--content--item">
+          <div class="avatar"></div>
+          <div class="s--c--item--content">
+            <div class="title"></div>
+            <div class="description"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2 -->
+
+    <div class="main">
+      <!-- MAIN HEADER -->
+      <div class="main--header">
+        <div class="m--header--pp">
+          <div class="avatar"></div>
+          <div class="title"></div>
+        </div>
+        <div class="m--header-buttons">
+          <div class="icon-button"></div>
+          <div class="icon-button"></div>
+        </div>
+      </div>
+      <!-- MAIN CONTENT -->
+      <div class="main--content"></div>
+      <!-- MAIN FOOTER -->
+      <div class="main--footer">
+        <div class="icon-button"></div>
+        <div class="icon-button"></div>
+        <input type="text" class="m--footer-input">
+        <div class="icon-button"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
